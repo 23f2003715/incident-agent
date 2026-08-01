@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: observable-incident-agent
+    runtime: docker
+    healthCheckPath: /healthz
+    envVars:
+      - key: OLLAMA_URL
+        value: http://host.docker.internal:11434
+      - key: OLLAMA_MODEL
+        value: llama3.1:8b
+      - key: DATABASE_URL
+        value: sqlite:///./incident-agent.db
