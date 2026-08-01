@@ -1,7 +1,2 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.venv/
-incident-agent.db
-*.sqlite3
-.env
+# Created by pytest automatically.
+*
